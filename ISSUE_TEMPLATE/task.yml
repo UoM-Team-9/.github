@@ -1,0 +1,51 @@
+name: Task
+description: A task with defined accpetance criteria
+title: "[Task]: "
+type: Task
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does the task involve and why
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: >
+        The concrete outputs (code, launch files, docs, results).
+        For larger pieces of work, create sub-issues instead of listing them here.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkable conditions that define when the task is complete
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] Tests pass in CI
+        - [ ] Docs/diagrams updated
+    validations:
+      required: true
+
+  - type: input
+    id: context
+    attributes:
+      label: Context
+      description: Where the task came from (sprint goal, meeting note, ADR, bigger task).
+      placeholder: "notes/meetings/weekX.md"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Any additional info links or misc notes
