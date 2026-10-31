@@ -1,7 +1,6 @@
 name: Task
 description: A task with defined accpetance criteria
 title: "[Task]: "
-type: Task
 body:
   - type: textarea
     id: description
